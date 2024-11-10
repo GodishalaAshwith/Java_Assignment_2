@@ -1,0 +1,41 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: black;
+  height: 100vh;
+}
+.banner {
+  position: relative;
+  top: 45%;
+}
+
+.title {
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+}
+
+svg path {
+  fill: transparent;
+  stroke: #fff;
+  stroke-width: 1.2;
+  stroke-dasharray: 350;
+  stroke-dashoffset: 350;
+  animation: textAnimation 4s ease-in-out 1 forwards;
+}
+
+@keyframes textAnimation {
+  0% {
+    stroke-dashoffset: 350;
+  }
+  60% {
+    fill: transparent;
+  }
+  100% {
+    fill: #fff;
+    stroke-dashoffset: 0;
+  }
+}
