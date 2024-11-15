@@ -8,46 +8,50 @@
     <link rel="stylesheet" href="register.css" />
   </head>
   <body>
-    <div id="register_box">
-      <div id="heading">
-        <h1>Sign Up</h1>
-      </div>
-      <div>
-        <form method="post" action="RegisterServlet">
-          <div class="signup_cred">
+    <div class="img"></div>
+    <main>
+        <div id="register_box">
+        <div id="heading">
+          <h1>Sign Up</h1>
+        </div>
+        <div>
+          <form method="post" action="RegisterServlet">
             <p>Name</p>
-            <input name="name" type="text" required />
-          </div>
-          <div class="signup_cred">
+            <div class="signup_cred">
+              <input name="name" type="text" required />
+            </div>
             <p>Email</p>
-            <input name="uemail" type="email" required />
-          </div>
-          <div class="signup_cred">
+            <div class="signup_cred">
+              <input name="uemail" type="email" required />
+            </div>
             <p>Username</p>
-            <input name="uname" type="text" required />
-          </div>
-          <div class="signup_cred">
+            <div class="signup_cred">
+              <input name="uname" type="text" required />
+            </div>
             <p>Number</p>
-            <input name="number" type="tel" required />
-          </div>
-          <div class="signup_cred">
+            <div class="signup_cred">
+              <input name="number" type="tel" required />
+            </div>
             <p>Password</p>
-            <input name="pwd" type="password" required />
-          </div>
-          <div class="signup_cred">
+            <div class="signup_cred">
+              <input name="pwd" type="password" required />
+            </div>
             <p>Confirm Password</p>
-            <input name="cpwd" type="password" required />
-          </div>
-          <div class="signup_cred" id="submit">
-            <button type="submit">Submit</button>
-          </div>
-        </form>
-      </div>
-    </div>
-
-    <div class="error-message">
-      <p>Hello</p>
-      <!-- Style this -- this is where the error message is gonna display -->
-    </div>
+            <div class="signup_cred">
+              <input name="cpwd" type="password" required />
+            </div>
+            <div class="buttons">
+              <div class="signup_cred" id="submit">
+                <button type="submit">Submit</button>
+              </div>
+              <div class="error-message">
+                <a href="..\login\login.html">Login instead?</a>
+              </div>
+            </div>
+            
+          </form>
+        </div>
+      </div>   
+    </main>
   </body>
 </html>
