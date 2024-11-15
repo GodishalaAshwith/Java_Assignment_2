@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Page</title>
+    <link rel="icon" type="image/x-icon" href="logo.png" />
+    <link rel="stylesheet" href="register.css" />
+  </head>
+  <body>
+    <div id="register_box">
+      <div id="heading">
+        <h1>Sign Up</h1>
+      </div>
+      <div>
+        <form method="post" action="RegisterServlet">
+          <div class="signup_cred">
+            <p>Name</p>
+            <input name="name" type="text" required />
+          </div>
+          <div class="signup_cred">
+            <p>Email</p>
+            <input name="uemail" type="email" required />
+          </div>
+          <div class="signup_cred">
+            <p>Username</p>
+            <input name="uname" type="text" required />
+          </div>
+          <div class="signup_cred">
+            <p>Number</p>
+            <input name="number" type="tel" required />
+          </div>
+          <div class="signup_cred">
+            <p>Password</p>
+            <input name="pwd" type="password" required />
+          </div>
+          <div class="signup_cred">
+            <p>Confirm Password</p>
+            <input name="cpwd" type="password" required />
+          </div>
+          <div class="signup_cred" id="submit">
+            <button type="submit">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="error-message">
+      <p>Hello</p>
+      <!-- Style this -- this is where the error message is gonna display -->
+    </div>
+  </body>
+</html>
